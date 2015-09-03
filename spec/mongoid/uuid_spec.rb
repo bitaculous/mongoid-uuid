@@ -1,0 +1,3 @@
+RSpec.describe Mongoid::UUID do
+  # Your specs goes here...
+end
