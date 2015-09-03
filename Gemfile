@@ -21,6 +21,12 @@ group :test do
   gem 'rubocop',       '~> 0.33.0', require: false
   gem 'rubocop-rspec', '~> 1.3.0',  require: false
 
+  # --- Coverage ---
+
+  gem 'simplecov', '~> 0.10.0', require: false
+
+  gem 'codeclimate-test-reporter', '~> 0.4.7', require: false
+
   # --- Formatter ---
 
   gem 'nyan-cat-formatter', '~> 0.11', require: false
