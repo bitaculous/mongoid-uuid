@@ -11,6 +11,11 @@ group :development do
 end
 
 group :test do
+  # --- Database ---
+
+  # gem 'database_cleaner', '~> 1.4.1', require: false
+  gem 'database_cleaner', github: 'DatabaseCleaner/database_cleaner', require: false
+
   # --- Code Analysis ---
 
   gem 'rubocop',       '~> 0.33.0', require: false
