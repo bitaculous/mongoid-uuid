@@ -24,7 +24,7 @@ RSpec.describe Mongoid::UUID, type: :model do
       expect(::UUID.validate(uuid)).to be true
     end
 
-    it 'generates UUIDs' do
+    it 'obviously generates UUIDs' do
       dummy  = Dummy.create! name: 'Dummy'
       dummy2 = Dummy.create! name: 'Dummy2'
       dummy3 = Dummy.create! name: 'Dummy3'
@@ -33,7 +33,7 @@ RSpec.describe Mongoid::UUID, type: :model do
       expect(dummy.uuid.data).not_to eql dummy3.uuid.data
     end
 
-    it 'allows the UUID to be passed into' do
+    it 'allows the UUID to be passed as `BSON::Binary`' do
       uuid  = BSON::Binary.new ::UUID.new.generate, :uuid
       dummy = Dummy.create! name: 'Dummy', uuid: uuid
 
