@@ -3,7 +3,7 @@
 require File.expand_path '../lib/mongoid/uuid/version', __FILE__
 
 Gem::Specification.new 'mongoid-uuid', Mongoid::UUID::VERSION do |spec|
-  spec.summary          = 'Universally unique identifier (UUID) for [Mongoid] documents'
+  spec.summary          = 'Universally unique identifier (UUID) for [Mongoid] documents.'
   spec.author           = 'Maik Kempe'
   spec.email            = 'mkempe@bitaculous.com'
   spec.homepage         = 'https://bitaculous.github.io/mongoid-uuid/'
