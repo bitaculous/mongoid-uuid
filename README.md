@@ -31,6 +31,15 @@ Run `rubocop`.
 
 To run Specs and RuboCop altogether, run `rake`.
 
+Credits
+-------
+
+### Mongoid UUID uses code from the following repositories:
+
+* [mongoid-uuid](https://github.com/badlamer/mongoid-uuid "mongoid-uuid") by [Yury Druzhkov](https://github.com/badlamer "Yury Druzhkov")
+* [mongoid-uuid-securerandom](https://github.com/warrenguy/mongoid-uuid-securerandom "mongoid-uuid-securerandom") by [Warren Guy](https://github.com/warrenguy "Warren Guy")
+* [vidibus-uuid](https://github.com/vidibus/vidibus-uuid "vidibus-uuid") by [Vidibus](https://github.com/vidibus "Vidibus")
+
 Bug Reports
 -----------
 
