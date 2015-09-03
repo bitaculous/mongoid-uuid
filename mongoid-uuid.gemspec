@@ -20,5 +20,5 @@ Gem::Specification.new 'mongoid-uuid', Mongoid::UUID::VERSION do |spec|
   spec.add_development_dependency 'bundler',       '~> 1.10'
   spec.add_development_dependency 'rake',          '~> 10.4.2'
   spec.add_development_dependency 'rspec',         '~> 3.3.0'
-  spec.add_development_dependency 'mongoid-rspec', '~> 2.3.0.rc0'
+  spec.add_development_dependency 'mongoid-rspec', '>= 2.2.0', '<= 2.3.0.rc0'
 end
