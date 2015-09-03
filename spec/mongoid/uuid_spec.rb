@@ -16,12 +16,21 @@ RSpec.describe Mongoid::UUID, type: :model do
   end
 
   describe 'creation' do
-    it 'generates an UUID' do
+    it 'generates automatically an UUID' do
       dummy = Dummy.create! name: 'Dummy'
       uuid  = dummy.uuid.data
 
       expect(uuid.length).to eq 36
       expect(::UUID.validate(uuid)).to be true
+    end
+
+    it 'generates UUIDs' do
+      dummy  = Dummy.create! name: 'Dummy'
+      dummy2 = Dummy.create! name: 'Dummy2'
+      dummy3 = Dummy.create! name: 'Dummy3'
+
+      expect(dummy.uuid.data).not_to eql dummy2.uuid.data
+      expect(dummy.uuid.data).not_to eql dummy3.uuid.data
     end
 
     it 'allows the UUID to be passed into' do
