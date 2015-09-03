@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mongoid-uuid by bitaculous</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Mongoid-uuid</h1>
+        <p>Universally unique identifier (UUID) for Mongoid documents</p>
+
+        <p class="view"><a href="https://github.com/bitaculous/mongoid-uuid">View the Project on GitHub <small>bitaculous/mongoid-uuid</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/bitaculous/mongoid-uuid/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/bitaculous/mongoid-uuid/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/bitaculous/mongoid-uuid">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">Sample</span>
+  <span class="pl-k">include</span> <span class="pl-c1">Mongoid</span>::<span class="pl-c1">Document</span>
+  <span class="pl-k">include</span> <span class="pl-c1">Mongoid</span>::<span class="pl-c1">Uuid</span>
+
+  field <span class="pl-c1">:name</span>
+<span class="pl-k">end</span>
+
+sample <span class="pl-k">=</span> <span class="pl-c1">Sample</span>.create! <span class="pl-c1">name:</span> <span class="pl-s"><span class="pl-pds">'</span>Condimentum Ligula<span class="pl-pds">'</span></span>
+
+sample.uuid <span class="pl-c"># Returns a `BSON::Binary` object</span>
+sample.uuid.data <span class="pl-c"># Returns UUID as string</span></pre></div>
+
+<h2>
+<a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h2>
+
+<h3>
+<a id="run-specs" class="anchor" href="#run-specs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run Specs</h3>
+
+<p>Run <code>rspec</code>.</p>
+
+<p>or via <a href="http://guardgem.org" title="A command line tool to easily handle events on file system modifications.">Guard</a>:</p>
+
+<pre><code>$ guard -g spec
+</code></pre>
+
+<h3>
+<a id="see-test-coverage" class="anchor" href="#see-test-coverage" aria-hidden="true"><span class="octicon octicon-link"></span></a>See Test Coverage</h3>
+
+<p>Run <code>COVERAGE=true rspec</code>.</p>
+
+<h3>
+<a id="run-rubocop" class="anchor" href="#run-rubocop" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run <a href="https://github.com/bbatsov/rubocop" title="A Ruby static code analyzer, based on the community Ruby style guide.">RuboCop</a>
+</h3>
+
+<p>Run <code>rubocop</code>.</p>
+
+<p>To run Specs and RuboCop altogether, run <code>rake</code>.</p>
+
+<h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h2>
+
+<h3>
+<a id="mongoid-uuid-uses-code-from-the-following-repositories" class="anchor" href="#mongoid-uuid-uses-code-from-the-following-repositories" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mongoid UUID uses code from the following repositories:</h3>
+
+<ul>
+<li>
+<a href="https://github.com/badlamer/mongoid-uuid" title="mongoid-uuid">mongoid-uuid</a> by <a href="https://github.com/badlamer" title="Yury Druzhkov">Yury Druzhkov</a>
+</li>
+<li>
+<a href="https://github.com/warrenguy/mongoid-uuid-securerandom" title="mongoid-uuid-securerandom">mongoid-uuid-securerandom</a> by <a href="https://github.com/warrenguy" title="Warren Guy">Warren Guy</a>
+</li>
+<li>
+<a href="https://github.com/vidibus/vidibus-uuid" title="vidibus-uuid">vidibus-uuid</a> by <a href="https://github.com/vidibus" title="Vidibus">Vidibus</a>
+</li>
+</ul>
+
+<h2>
+<a id="code-status" class="anchor" href="#code-status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Status</h2>
+
+<p><a href="https://travis-ci.org/bitaculous/mongoid-uuid" title="Mongoid UUID at Travis CI"><img src="https://img.shields.io/travis/bitaculous/mongoid-uuid.svg?style=flat" alt="Travis CI Status" title="Travis CI Status"></a>
+<a href="https://codeclimate.com/github/bitaculous/mongoid-uuid" title="Mongoid UUID at Code Climate"><img src="https://img.shields.io/codeclimate/github/bitaculous/mongoid-uuid.svg?style=flat" alt="Code Climate Status" title="Code Climate Status"></a>
+<a href="https://codeclimate.com/github/bitaculous/mongoid-uuid" title="Test Coverage (Code Climate)"><img src="https://img.shields.io/codeclimate/coverage/github/bitaculous/mongoid-uuid.svg?style=flat" alt="Test Coverage Status" title="Test Coverage Status"></a>
+<a href="https://gemnasium.com/bitaculous/mongoid-uuid" title="Mongoid UUID at Gemnasium"><img src="https://img.shields.io/gemnasium/bitaculous/mongoid-uuid.svg?style=flat" alt="Gemnasium Status" title="Gemnasium Status"></a></p>
+
+<h2>
+<a id="bug-reports" class="anchor" href="#bug-reports" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bug Reports</h2>
+
+<p>Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
+and submit new problems <a href="https://github.com/bitaculous/mongoid-uuid/issues" title="Github Issues">here</a>.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Mongoid UUID is released under the <a href="http://opensource.org/licenses/MIT" title="The MIT License (MIT)">MIT License (MIT)</a>, see <a href="https://raw.githubusercontent.com/bitaculous/mongoid-uuid/master/LICENSE" title="License">LICENSE</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/bitaculous">bitaculous</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
