@@ -8,6 +8,23 @@
 
 **Universally unique identifier (UUID) for [Mongoid] documents**
 
+Usage
+-----
+
+```ruby
+class Sample
+  include Mongoid::Document
+  include Mongoid::Uuid
+
+  field :name
+end
+
+sample = Sample.create! name: 'Condimentum Ligula'
+
+sample.uuid # Returns a `BSON::Binary` object
+sample.uuid.data # Returns UUID as string
+```
+
 Development
 -----------
 
