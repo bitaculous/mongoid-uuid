@@ -6,7 +6,7 @@ module Mongoid
       included do
         # === Field ===
 
-        field :uuid, type: BSON::Binary, default: -> { BSON::Binary.new(::UUID.new.generate, :uuid) }, pre_processed: true
+        field :uuid, type: BSON::Binary, default: -> { BSON::Binary.new ::UUID.new.generate, :uuid }, pre_processed: true
 
         attr_readonly :uuid
 
