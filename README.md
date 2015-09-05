@@ -14,7 +14,7 @@ Usage
 ```ruby
 class Sample
   include Mongoid::Document
-  include Mongoid::Uuid
+  include Mongoid::UUID
 
   field :name
 end
