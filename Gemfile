@@ -6,9 +6,13 @@ source 'https://rubygems.org'
 # dependencies, and development dependencies will be added by default to the `:development` group.
 gemspec
 
+# == Development ===
+
 group :development do
   gem 'guard-rspec', '~> 4.6.4', require: false
 end
+
+# == Test ===
 
 group :test do
   # --- Database ---
@@ -19,7 +23,7 @@ group :test do
   # --- Code Analysis ---
 
   gem 'rubocop',       '~> 0.33.0', require: false
-  gem 'rubocop-rspec', '~> 1.3.0',  require: false
+  gem 'rubocop-rspec', '~> 1.3.1',  require: false
 
   # --- Coverage ---
 
@@ -31,6 +35,8 @@ group :test do
 
   gem 'nyan-cat-formatter', '~> 0.11', require: false
 end
+
+# == Misc ===
 
 group :misc do
   gem 'growl', '~> 1.0.3', require: RUBY_PLATFORM.include?('darwin') && 'growl'
