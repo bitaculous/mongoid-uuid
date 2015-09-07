@@ -8,10 +8,10 @@ require 'spec_helper'
 
 # Add additional requires below this line.
 
-# Requires shared examples in `spec/shared` and its subdirectories.
-shared = File.expand_path 'spec/shared', root
+# Requires shared examples in `spec/shared/examples` and its subdirectories.
+examples = File.expand_path 'spec/shared/examples', root
 
-Dir["#{shared}/**/*.rb"].each { |file| require file }
+Dir["#{examples}/**/*.rb"].each { |file| require file }
 
 # Requires supporting Ruby files with custom matchers, macros etc. in `spec/support` and its subdirectories. Files
 # matching `spec/**/*_spec.rb` are run as spec files by default. This means that files in `spec/support` that end in

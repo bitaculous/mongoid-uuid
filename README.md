@@ -25,6 +25,16 @@ sample.uuid # Returns a `BSON::Binary` object
 sample.uuid.data # Returns UUID as string
 ```
 
+### [RSpec]
+
+1. Require `mongoid/uuid/rspec` in your spec helper
+
+2. Use `it_behaves_like 'Mongoid::UUID'` to test your model
+
+    ```ruby
+    it_behaves_like 'Mongoid::UUID', Sample
+    ```
+
 Development
 -----------
 
@@ -79,6 +89,7 @@ Mongoid UUID is released under the [MIT License (MIT)], see [LICENSE].
 [Mongoid]: http://mongoid.org "Ruby ODM framework for MongoDB"
 [RuboCop]: https://github.com/bbatsov/rubocop "A Ruby static code analyzer, based on the community Ruby style guide."
 [Mongoid UUID]: https://bitaculous.github.io/mongoid-uuid/ "Universally unique identifier (UUID) for Mongoid documents."
+[RSpec]: http://rspec.info "Behaviour Driven Development for Ruby"
 [Test Coverage]: https://codeclimate.com/github/bitaculous/mongoid-uuid "Test Coverage (Code Climate)"
 [Test Coverage Status]: https://img.shields.io/codeclimate/coverage/github/bitaculous/mongoid-uuid.svg?style=flat "Test Coverage Status"
 [Travis CI]: https://travis-ci.org/bitaculous/mongoid-uuid "Mongoid UUID at Travis CI"

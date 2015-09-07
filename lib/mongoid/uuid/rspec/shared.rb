@@ -1,0 +1,1 @@
+require 'mongoid/uuid/rspec/shared/examples'
