@@ -43,6 +43,19 @@ sample <span class="pl-k">=</span> <span class="pl-c1">Sample</span>.create! <sp
 sample.uuid <span class="pl-c"># Returns a `BSON::Binary` object</span>
 sample.uuid.data <span class="pl-c"># Returns UUID as string</span></pre></div>
 
+<h3>
+<a id="rspec" class="anchor" href="#rspec" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://rspec.info" title="Behaviour Driven Development for Ruby">RSpec</a>
+</h3>
+
+<ol>
+<li><p>Require <code>mongoid/uuid/rspec</code> in your spec helper</p></li>
+<li>
+<p>Use <code>it_behaves_like 'Mongoid::UUID'</code> to test your model</p>
+
+<div class="highlight highlight-ruby"><pre>it_behaves_like <span class="pl-s"><span class="pl-pds">'</span>Mongoid::UUID<span class="pl-pds">'</span></span>, <span class="pl-c1">Sample</span></pre></div>
+</li>
+</ol>
+
 <h2>
 <a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h2>
 
