@@ -8,11 +8,6 @@ require 'spec_helper'
 
 # Add additional requires below this line.
 
-# Requires shared examples in `spec/shared/examples` and its subdirectories.
-examples = File.expand_path 'spec/shared/examples', root
-
-Dir["#{examples}/**/*.rb"].each { |file| require file }
-
 # Requires supporting Ruby files with custom matchers, macros etc. in `spec/support` and its subdirectories. Files
 # matching `spec/**/*_spec.rb` are run as spec files by default. This means that files in `spec/support` that end in
 # `_spec.rb` will both be required and run as specs, causing the specs to be run twice. It is recommended that you do
