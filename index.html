@@ -52,7 +52,9 @@ sample.uuid.data <span class="pl-c"># Returns UUID as string</span></pre></div>
 <li>
 <p>Use <code>it_behaves_like 'Mongoid::UUID'</code> to test your model</p>
 
-<div class="highlight highlight-ruby"><pre>it_behaves_like <span class="pl-s"><span class="pl-pds">'</span>Mongoid::UUID<span class="pl-pds">'</span></span>, <span class="pl-c1">Sample</span></pre></div>
+<div class="highlight highlight-ruby"><pre><span class="pl-c1">RSpec</span>.describe <span class="pl-c1">Sample</span>, <span class="pl-c1">type:</span> <span class="pl-c1">:model</span> <span class="pl-k">do</span>
+  it_behaves_like <span class="pl-s"><span class="pl-pds">'</span>Mongoid::UUID<span class="pl-pds">'</span></span>
+<span class="pl-k">end</span></pre></div>
 </li>
 </ol>
 
