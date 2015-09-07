@@ -1,6 +1,7 @@
 1.1.0
 =====
 
+* [➠] Extracted specs into shared example for shared usage
 * [➠] Updated Gems
 
 1.0.0
