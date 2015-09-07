@@ -8,6 +8,9 @@ cache: bundler
 env:
   - COVERAGE=true
 language: ruby
+notifications:
+  email:
+    - dev@bitaculous.com
 rvm:
   - 2.1.7
   - 2.2.3
