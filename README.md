@@ -32,7 +32,9 @@ sample.uuid.data # Returns UUID as string
 2. Use `it_behaves_like 'Mongoid::UUID'` to test your model
 
     ```ruby
-    it_behaves_like 'Mongoid::UUID', Sample
+    RSpec.describe Dummy, type: :model do
+      it_behaves_like 'Mongoid::UUID'
+    end
     ```
 
 Development
