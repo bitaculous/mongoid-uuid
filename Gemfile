@@ -17,15 +17,15 @@ end
 group :test do
   # --- Database ---
 
-  # gem 'database_cleaner', '~> 1.4.1', require: false
+  # gem 'database_cleaner', '~> 1.5.0', require: false
   gem 'database_cleaner', github: 'DatabaseCleaner/database_cleaner', require: false
 
   # --- Code Analysis ---
 
-  gem 'rubocop',       '~> 0.33.0', require: false
+  gem 'rubocop',       '~> 0.34.0', require: false
   gem 'rubocop-rspec', '~> 1.3.1',  require: false
 
-  # --- Coverage ---
+  # --- Code coverage ---
 
   gem 'simplecov', '~> 0.10.0', require: false
 
@@ -41,5 +41,5 @@ end
 group :misc do
   gem 'growl', '~> 1.0.3', require: RUBY_PLATFORM.include?('darwin') && 'growl'
 
-  gem 'rb-fsevent', '~> 0.9.5', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
+  gem 'rb-fsevent', '~> 0.9.6', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
 end
