@@ -1,7 +1,5 @@
-RSpec.shared_examples 'Mongoid::UUID' do |described_class|
+RSpec.shared_examples 'Mongoid::UUID' do
   describe 'concerns' do
-    subject { described_class.new }
-
     describe 'fields' do
       it { is_expected.to have_field(:uuid).of_type BSON::Binary }
     end
