@@ -58,7 +58,7 @@ Run `COVERAGE=true rspec`.
 
 Run `rubocop`.
 
-To run specs and RuboCop altogether, run `rake`.
+To run all specs and RuboCop altogether, run `rake`.
 
 Credits
 -------
