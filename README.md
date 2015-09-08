@@ -40,7 +40,7 @@ sample.uuid.data # Returns UUID as string
 Development
 -----------
 
-### Run Specs
+### Run specs with [RSpec]
 
 Run `rspec`.
 
@@ -58,7 +58,7 @@ Run `COVERAGE=true rspec`.
 
 Run `rubocop`.
 
-To run Specs and RuboCop altogether, run `rake`.
+To run specs and RuboCop altogether, run `rake`.
 
 Credits
 -------

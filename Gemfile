@@ -25,11 +25,11 @@ group :test do
   gem 'rubocop',       '~> 0.34.0', require: false
   gem 'rubocop-rspec', '~> 1.3.1',  require: false
 
-  # --- Code coverage ---
+  # --- Code Coverage ---
 
   gem 'simplecov', '~> 0.10.0', require: false
 
-  gem 'codeclimate-test-reporter', '~> 0.4.7', require: false
+  gem 'codeclimate-test-reporter', '~> 0.4.8', require: false
 
   # --- Formatter ---
 

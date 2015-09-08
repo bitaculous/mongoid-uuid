@@ -14,10 +14,10 @@ Style/AsciiComments:
   Enabled: false
 
 Style/TrailingBlankLines:
-  Description: "Checks trailing blank lines and final newline."
-  StyleGuide: "https://github.com/bbatsov/ruby-style-guide#newline-eof"
+  Description: 'Checks trailing blank lines and final newline.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#newline-eof'
   Enabled: false
 
 Metrics/LineLength:
-  Description: "Limit lines to 120 characters with 10 characters as buffer."
+  Description: 'Limit lines to 120 characters with 10 characters as buffer.'
   Max: 130
