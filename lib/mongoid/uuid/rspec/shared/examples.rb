@@ -15,7 +15,7 @@ RSpec.shared_examples 'Mongoid::UUID' do
 
   describe 'creation' do
     it 'generates automatically an UUID' do
-      object = described_class.create!
+      object = described_class.new
       uuid   = object.uuid.data
 
       expect(uuid.length).to eq 36
@@ -24,7 +24,7 @@ RSpec.shared_examples 'Mongoid::UUID' do
 
     it 'allows the UUID to be passed as `BSON::Binary`' do
       uuid   = BSON::Binary.new ::UUID.new.generate, :uuid
-      object = described_class.create! uuid: uuid
+      object = described_class.new uuid: uuid
 
       expect(uuid).to eq object.uuid
     end
@@ -39,22 +39,6 @@ RSpec.shared_examples 'Mongoid::UUID' do
 
       expect(object.valid?).to be false
       expect { object.save! }.to raise_error Mongoid::Errors::Validations
-    end
-  end
-
-  describe 'UUID is a read only attribute' do
-    let(:object) { described_class.create! }
-
-    context 'update' do
-      it 'raises an error' do
-        expect { object.update_attribute :uuid, 'baz-baz1' }.to raise_error Mongoid::Errors::ReadonlyAttribute
-      end
-    end
-
-    context 'remove' do
-      it 'raises an error' do
-        expect { object.remove_attribute :uuid }.to raise_error Mongoid::Errors::ReadonlyAttribute
-      end
     end
   end
 end
