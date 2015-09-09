@@ -14,15 +14,6 @@ RSpec.shared_examples 'Mongoid::UUID' do
   end
 
   describe 'creation' do
-    it 'obviously generates UUIDs' do
-      object  = described_class.create!
-      object2 = described_class.create!
-      object3 = described_class.create!
-
-      expect(object.uuid.data).not_to eql object2.uuid.data
-      expect(object.uuid.data).not_to eql object3.uuid.data
-    end
-
     it 'generates automatically an UUID' do
       object = described_class.create!
       uuid   = object.uuid.data

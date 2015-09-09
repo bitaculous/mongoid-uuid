@@ -1,3 +1,8 @@
+1.2.0
+=====
+
+* [➠] Moved some specs out of shared examples into dummy spec
+
 1.1.1
 =====
 
