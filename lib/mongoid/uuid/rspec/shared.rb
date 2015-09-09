@@ -1,1 +1,1 @@
-require 'mongoid/uuid/rspec/shared/examples'
+require_relative 'shared/examples'

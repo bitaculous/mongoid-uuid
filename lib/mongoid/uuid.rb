@@ -2,7 +2,7 @@ require 'bson'
 require 'mongoid'
 require 'uuid'
 
-require 'mongoid/uuid/validator'
+require_relative 'uuid/validator'
 
 module Mongoid
   module UUID #:nodoc:
