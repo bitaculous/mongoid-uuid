@@ -41,9 +41,11 @@ sample.uuid.data # Returns UUID as string
 
     ```ruby
     RSpec.describe Sample, type: :model do
-      it_behaves_like 'Mongoid::UUID::Concerns'
+      object = described_class.create!
 
+      it_behaves_like 'Mongoid::UUID::Concerns'
       it_behaves_like 'Mongoid::UUID::Fabrication'
+      it_behaves_like 'Mongoid::UUID::ReadOnlyAttribute', object
     end
     ```
 
