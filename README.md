@@ -37,6 +37,16 @@ sample.uuid.data # Returns UUID as string
     end
     ```
 
+    or
+
+    ```ruby
+    RSpec.describe Sample, type: :model do
+      it_behaves_like 'Mongoid::UUID::Concerns'
+
+      it_behaves_like 'Mongoid::UUID::Fabrication'
+    end
+    ```
+
 Development
 -----------
 

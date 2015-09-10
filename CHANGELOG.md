@@ -1,6 +1,7 @@
 1.2.0
 =====
 
+* [➠] Splitted `Mongoid::UUID` shared examples into `Mongoid::UUID::Concerns` and `Mongoid::UUID::Fabrication`
 * [➠] Moved some specs out of shared examples into dummy spec
 
 1.1.1
