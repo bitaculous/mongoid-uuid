@@ -8,6 +8,17 @@
 
 **Universally unique identifier (UUID) for [Mongoid] documents.**
 
+Installation
+------------
+
+1. Add Mongoid UUID to your Gemfile:
+
+    ```
+    gem 'mongoid-uuid', github: 'bitaculous/mongoid-uuid'
+    ```
+
+2. Run `bundle` to install all dependencies with [Bundler]
+
 Usage
 -----
 
@@ -93,6 +104,7 @@ License
 
 Mongoid UUID is released under the [MIT License (MIT)], see [LICENSE].
 
+[Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
 [Code Climate]: https://codeclimate.com/github/bitaculous/mongoid-uuid "Mongoid UUID at Code Climate"
 [Code Climate Status]: https://img.shields.io/codeclimate/github/bitaculous/mongoid-uuid.svg?style=flat "Code Climate Status"
 [Gemnasium]: https://gemnasium.com/bitaculous/mongoid-uuid "Mongoid UUID at Gemnasium"
