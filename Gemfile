@@ -15,6 +15,10 @@ end
 # == Test ===
 
 group :test do
+  # --- Objects ---
+
+  gem 'fabrication', '~> 2.14.1', require: false
+
   # --- Database ---
 
   # gem 'database_cleaner', '~> 1.5.0', require: false

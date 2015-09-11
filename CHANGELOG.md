@@ -1,9 +1,9 @@
 1.2.0
 =====
 
-* [➠] Extracted read only attribute spec into shared example
-* [➠] Splitted `Mongoid::UUID` shared examples into `Mongoid::UUID::Concerns` and `Mongoid::UUID::Fabrication`
-* [➠] Moved some specs out of shared examples into dummy spec
+* [➠] Splitted `Mongoid::UUID` shared example into `Mongoid::UUID::Concerns`, `Mongoid::UUID::Creation`,
+     `Mongoid::UUID::Fabrication` and `Mongoid::UUID::ReadOnlyAttribute`
+* [➠] Updated Gems
 
 1.1.1
 =====

@@ -41,11 +41,12 @@ sample.uuid.data # Returns UUID as string
 
     ```ruby
     RSpec.describe Sample, type: :model do
-      object = described_class.create!
+      sample  = Fabricate :sample
+      sample2 = Fabricate :sample2
 
-      it_behaves_like 'Mongoid::UUID::Concerns'
-      it_behaves_like 'Mongoid::UUID::Fabrication'
-      it_behaves_like 'Mongoid::UUID::ReadOnlyAttribute', object
+      it_behaves_like 'Mongoid::UUID'
+      it_behaves_like 'Mongoid::UUID::Fabrication', sample, sample2
+      it_behaves_like 'Mongoid::UUID::ReadOnlyAttribute', sample
     end
     ```
 
