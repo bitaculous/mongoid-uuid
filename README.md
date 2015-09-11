@@ -13,7 +13,7 @@ Installation
 
 1. Add Mongoid UUID to your Gemfile:
 
-    ```
+    ```ruby
     gem 'mongoid-uuid', github: 'bitaculous/mongoid-uuid'
     ```
 
