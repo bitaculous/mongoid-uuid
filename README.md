@@ -84,6 +84,12 @@ Run `rubocop`.
 
 To run all specs and RuboCop altogether, run `rake`.
 
+Bug Reports
+-----------
+
+Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
+and submit new problems [here].
+
 Credits
 -------
 
@@ -92,12 +98,6 @@ Credits
 * [mongoid-uuid](https://github.com/badlamer/mongoid-uuid "mongoid-uuid") by [Yury Druzhkov](https://github.com/badlamer "Yury Druzhkov")
 * [mongoid-uuid-securerandom](https://github.com/warrenguy/mongoid-uuid-securerandom "mongoid-uuid-securerandom") by [Warren Guy](https://github.com/warrenguy "Warren Guy")
 * [vidibus-uuid](https://github.com/vidibus/vidibus-uuid "vidibus-uuid") by [Vidibus](https://github.com/vidibus "Vidibus")
-
-Bug Reports
------------
-
-Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
-and submit new problems [here].
 
 License
 -------
