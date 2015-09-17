@@ -1,4 +1,3 @@
 --backtrace
 --color
---format NyanCatWideFormatter
 --require uuid_helper
