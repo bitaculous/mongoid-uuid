@@ -10,10 +10,10 @@ test:
       hosts:
         - localhost:27017
       options:
-        # Change the default read preference. Valid options for mode are: `:secondary`, `:secondary_preferred`,
-        # `:primary`, `:primary_preferred` or `:nearest` (default: `:primary`).
+        # Change the default read preference. Valid options for mode are: `:primary`, `:primary_preferred`, `:secondary`,
+        # `:secondary_preferred` or `:nearest` (default: `:primary`).
         read:
-          mode: primary
+          mode: :primary
 
         # The maximum number of connections in the connection pool (default: `5`).
         max_pool_size: 1

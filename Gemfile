@@ -19,10 +19,9 @@ group :test do
 
   gem 'fabrication', '~> 2.14.1', require: false
 
-  # --- Database ---
+  # --- Cleaner ---
 
-  # gem 'database_cleaner', '~> 1.5.0', require: false
-  gem 'database_cleaner', github: 'DatabaseCleaner/database_cleaner', require: false
+  gem 'mongoid_cleaner', github: 'bitaculous/mongoid_cleaner', branch: 'mongoid5', require: false
 
   # --- Code Analysis ---
 
@@ -34,6 +33,10 @@ group :test do
   gem 'simplecov', '~> 0.10.0', require: false
 
   gem 'codeclimate-test-reporter', '~> 0.4.8', require: false
+
+  # --- Ooops! ---
+
+  gem 'pry-byebug', '~> 3.2.0', require: false
 
   # --- Formatter ---
 
