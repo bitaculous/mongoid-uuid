@@ -1,3 +1,10 @@
+1.3.0
+=====
+
+* [➠] Support for Mongoid 5.x
+* [➠] Use `mongoid_cleaner` instead of `database_cleaner`
+* [➠] Updated Gems
+
 1.2.0
 =====
 
