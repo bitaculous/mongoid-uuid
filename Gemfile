@@ -17,7 +17,7 @@ group :test do
 
   # --- Cleaner ---
 
-  gem 'mongoid_cleaner', github: 'bitaculous/mongoid_cleaner', branch: 'mongoid5', require: false
+  gem 'mongoid-cleaner', github: 'bitaculous/mongoid-cleaner', require: false
 
   # --- Code Analysis ---
 

@@ -1,3 +1,9 @@
+1.3.1
+=====
+
+* [➠] Minor changes / clean up
+* [➠] Updated Gems
+
 1.3.0
 =====
 

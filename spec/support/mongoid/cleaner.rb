@@ -1,14 +1,14 @@
-require 'mongoid_cleaner'
+require 'mongoid/cleaner'
 
 RSpec.configure do |config|
-  config.before(:suite) do
-    MongoidCleaner.strategy = :drop
+  config.before :suite do
+    Mongoid::Cleaner.strategy = :drop
 
-    MongoidCleaner.clean
+    Mongoid::Cleaner.clean
   end
 
-  config.around(:each) do |example|
-    MongoidCleaner.cleaning do
+  config.around :each do |example|
+    Mongoid::Cleaner.cleaning do
       example.run
     end
   end
