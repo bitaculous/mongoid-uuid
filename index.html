@@ -71,12 +71,16 @@ sample.uuid.data <span class="pl-c"># Returns UUID as string</span></pre></div>
 <p>or</p>
 
 <div class="highlight highlight-source-ruby"><pre><span class="pl-c1">RSpec</span>.describe <span class="pl-c1">Sample</span>, <span class="pl-c1">type:</span> <span class="pl-c1">:model</span> <span class="pl-k">do</span>
-  sample  <span class="pl-k">=</span> <span class="pl-c1">Fabricate</span> <span class="pl-c1">:sample</span>
-  sample2 <span class="pl-k">=</span> <span class="pl-c1">Fabricate</span> <span class="pl-c1">:sample2</span>
-
   it_behaves_like <span class="pl-s"><span class="pl-pds">'</span>Mongoid::UUID<span class="pl-pds">'</span></span>
-  it_behaves_like <span class="pl-s"><span class="pl-pds">'</span>Mongoid::UUID::Fabrication<span class="pl-pds">'</span></span>, sample, sample2
-  it_behaves_like <span class="pl-s"><span class="pl-pds">'</span>Mongoid::UUID::ReadOnlyAttribute<span class="pl-pds">'</span></span>, sample
+
+  it_behaves_like <span class="pl-s"><span class="pl-pds">'</span>Mongoid::UUID::Fabrication<span class="pl-pds">'</span></span> <span class="pl-k">do</span>
+    let(<span class="pl-c1">:sample</span>)  { <span class="pl-c1">Fabricate</span> <span class="pl-c1">:sample</span> }
+    let(<span class="pl-c1">:sample2</span>) { <span class="pl-c1">Fabricate</span> <span class="pl-c1">:sample2</span> }
+  <span class="pl-k">end</span>
+
+  it_behaves_like <span class="pl-s"><span class="pl-pds">'</span>Mongoid::UUID::ReadOnlyAttribute<span class="pl-pds">'</span></span> <span class="pl-k">do</span>
+    let(<span class="pl-c1">:sample</span>) { <span class="pl-c1">Fabricate</span> <span class="pl-c1">:sample</span> }
+  <span class="pl-k">end</span>
 <span class="pl-k">end</span></pre></div>
 </li>
 </ol>
