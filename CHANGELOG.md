@@ -1,6 +1,8 @@
 Unreleased
 ==========
 
+* [➠] Moved Mongoid configuration under `spec/resources`
+* [➠] Moved fabricators under `spec/resources`
 * [➠] Modified concerns shared example
 * [➠] Updated Gems
 
