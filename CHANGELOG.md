@@ -1,6 +1,7 @@
 Unreleased
 ==========
 
+* [➠] Modified concerns shared example
 * [➠] Updated Gems
 
 1.4.0
