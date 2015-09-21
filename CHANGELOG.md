@@ -2,10 +2,6 @@
 =====
 
 * [➠] Modified RSpec shared examples
-
-1.3.1
-=====
-
 * [➠] Minor changes / clean up
 * [➠] Updated Gems
 
