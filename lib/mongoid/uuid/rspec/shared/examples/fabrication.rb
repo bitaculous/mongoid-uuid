@@ -1,5 +1,5 @@
-RSpec.shared_examples 'Mongoid::UUID::Fabrication' do |object1, object2|
+RSpec.shared_examples 'Mongoid::UUID::Fabrication' do
   it 'fabricates UUIDs' do
-    expect(object1.uuid.data).not_to eql object2.uuid.data
+    expect(sample.uuid.data).not_to eql sample2.uuid.data
   end
 end

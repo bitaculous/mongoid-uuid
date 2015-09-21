@@ -1,3 +1,8 @@
+1.4.0
+=====
+
+* [➠] Modified RSpec shared examples
+
 1.3.1
 =====
 
