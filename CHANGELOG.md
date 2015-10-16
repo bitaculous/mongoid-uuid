@@ -1,6 +1,7 @@
 Unreleased
 ==========
 
+* [➠] Extracted build steps for MongoDB on Travis CI into own script
 * [➠] Moved Mongoid configuration under `spec/resources`
 * [➠] Moved fabricators under `spec/resources`
 * [➠] Modified concerns shared example
