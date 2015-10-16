@@ -1,5 +1,5 @@
-Unreleased
-==========
+1.4.1
+=====
 
 * [➠] Extracted build steps for MongoDB on Travis CI into own script
 * [➠] Moved Mongoid configuration under `spec/resources`
