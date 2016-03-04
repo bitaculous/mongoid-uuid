@@ -1,3 +1,5 @@
+require_relative '../models/sample'
+
 Fabricator(:sample, from: Sample, aliases: [:valid_sample]) do
   name 'Sample'
 end

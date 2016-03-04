@@ -1,7 +1,7 @@
 Unreleased
 ==========
 
-* [➦] Merged changes
+* [➠] Better naming / shuffled things around
 * [➠] Updated Gems / RuboCop is happy again
 * [➠] Moved Rake tasks out of library
 * [➠] Updated Rubocop configuration
