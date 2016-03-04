@@ -1,3 +1,12 @@
+Unreleased
+==========
+
+* [➦] Merged changes
+* [➠] Updated Gems / RuboCop is happy again
+* [➠] Moved Rake tasks out of library
+* [➠] Updated Rubocop configuration
+* [➠] Updated Travis CI configration and test against the latest MongoDB version
+
 1.4.2
 =====
 
