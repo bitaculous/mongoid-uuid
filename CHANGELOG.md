@@ -1,5 +1,5 @@
-Unreleased
-==========
+1.5.0
+=====
 
 * [➠] Better naming / shuffled things around
 * [➠] Updated Gems / RuboCop is happy again
