@@ -1,6 +1,6 @@
 #!/usr/bin/env gem build
 
-require File.expand_path '../lib/mongoid/uuid/version', __FILE__
+require_relative 'lib/mongoid/uuid/version'
 
 Gem::Specification.new 'mongoid-uuid', Mongoid::UUID::VERSION do |spec|
   spec.summary          = 'Universally unique identifier (UUID) for Mongoid documents.'
@@ -14,11 +14,10 @@ Gem::Specification.new 'mongoid-uuid', Mongoid::UUID::VERSION do |spec|
   spec.required_ruby_version     = '~> 2.1'
   spec.required_rubygems_version = '~> 2.4'
 
-  spec.add_runtime_dependency 'mongoid', '>= 4.0.2', '<= 5.0.1'
-  spec.add_runtime_dependency 'uuid',    '~> 2.3.8'
+  spec.add_runtime_dependency 'mongoid', '>= 5.0', '< 6.0'
+  spec.add_runtime_dependency 'uuid',    '~> 2.3', '>= 2.3.8'
 
-  spec.add_development_dependency 'bundler',       '~> 1.10'
-  spec.add_development_dependency 'rake',          '~> 10.4.2'
-  spec.add_development_dependency 'rspec',         '~> 3.3.0'
-  spec.add_development_dependency 'mongoid-rspec', '>= 2.2.0', '<= 3.0.0'
+  spec.add_development_dependency 'rake',          '~> 10.5', '>= 10.5.0'
+  spec.add_development_dependency 'rspec',         '~> 3.4',  '>= 3.4.0'
+  spec.add_development_dependency 'mongoid-rspec', '~> 3.0',  '>= 3.0.0'
 end
